@@ -8,11 +8,13 @@
           :key="i"
           class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden"
         >
+        <nuxt-link :to="`/project/${project.slug}`">
           <img
             :src="project.image"
             :alt="project.title"
             class="h-48 w-full object-cover bg-gray-200 dark:bg-gray-700"
           />
+        </nuxt-link>
           <div class="p-6">
             <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
               {{ project.title }}
